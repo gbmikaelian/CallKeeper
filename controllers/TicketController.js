@@ -51,8 +51,6 @@ export default class TicketController extends Controller {
             const [ticket] = tickets.filter(v => v.baggage);
             const baggage = ticket.baggage;
 
-            console.log(ticket);
-
             tickets.forEach((v, k) => {
                 const ticket = new Ticket();
                 ticket.packet = packet._id;
